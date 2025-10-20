@@ -127,7 +127,7 @@ const POLLOS = [
 
         ],
         image: 'AlitasBBQ.png',
-        style: 'bg-cyan-100',
+        style: 'bg-white',
     },
 ];
 
