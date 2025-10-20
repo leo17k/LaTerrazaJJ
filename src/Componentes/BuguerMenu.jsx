@@ -5,19 +5,19 @@ const BURGERS = [
         name: 'HAMBURGUESA DE POLLO',
         desc: 'Pechuga de pollo a la parrilla, aderezo especial, aguacate y cebolla caramelizada.',
         price: '$6.00',
-        image: '/public/IMG/pollo.png', // Reemplaza con la URL de la imagen real
+        image: '/IMG/pollo.png', // Reemplaza con la URL de la imagen real
     },
     {
         name: 'HAMBURGUESA DE CARNE',
         desc: 'Doble porción de carne premium, tocino crujiente, aros de cebolla y salsa BBQ.',
         price: '$5.00',
-        image: '/public/IMG/carne.png', // Reemplaza con la URL de la imagen real
+        image: '/IMG/carne.png', // Reemplaza con la URL de la imagen real
     },
     {
         name: 'HAMBURGUESA MIXTA',
         desc: 'Una explosión de sabor con carne de res, pollo crispy y queso cheddar ',
         price: '$7.50',
-        image: './public/IMG/Mixta.png', // Reemplaza con la URL de la imagen real
+        image: '/IMG/Mixta.png', // Reemplaza con la URL de la imagen real
     },
 ];
 const BurguerMenu = () => {
