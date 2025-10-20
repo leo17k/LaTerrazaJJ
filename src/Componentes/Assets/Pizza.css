@@ -1,0 +1,21 @@
+.contenedor-con-degradado {
+ /* Permite el desplazamiento vertical (scroll) */
+    
+    /* La clave: la máscara de degradado */
+    mask-image: linear-gradient(
+        to bottom, 
+        black 0%,         /* Negro al inicio (visible) */
+        black 80%,         /* Negro hasta el 80% (visible) */
+        transparent 100%   /* Transparente al final (invisible, efecto desvanecimiento) */
+    );
+    
+    /* Prefijos de navegador para mayor compatibilidad (opcional, pero recomendado) */
+    -webkit-mask-image: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 1) 0%, 
+        rgba(0, 0, 0, 1) 80%, 
+        rgba(0, 0, 0, 0) 100%
+    );
+
+   
+}

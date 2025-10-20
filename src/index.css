@@ -1,0 +1,323 @@
+@import "tailwindcss";
+
+
+
+
+.bg-sopas{
+    background-image: url("../public/pexels-fariphotography-964544.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    height: max-content;
+}
+.bg-bebidas{
+    background-image: url("../public/IMG/sisi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+    
+    height: max-content;
+}
+.bg-parrillas{
+   background-attachment: fixed; 
+    
+    /* Propiedades que ya tenías */
+    background-image: url("../public/IMG/top-view-delicious-meat-with-copy-space.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.bg-cachapas {
+    background-attachment: fixed;
+    background-image: url("../public/IMG/12ds233.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.bg-cachapas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 1, 10, 0.459);
+    z-index: -1;
+    backdrop-filter: blur(5px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
+   
+    background-image: url("../public/IMG/hero-bg.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    background-attachment: fixed;
+
+    position: relative;
+    overflow: auto;
+    overflow-x: hidden;
+
+    overflow-y: scroll;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+    margin: 0
+    ;
+    padding: 0;
+
+    &::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100dvw;
+        height: 100dvh;
+        background: rgba(10, 10, 10, 0.85);
+        z-index: -1;
+    }
+}
+
+.epa{
+    width: 100dvw;
+    height: max-content;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.blurr {
+    background: rgba(0, 0, 0, 0.212);
+    backdrop-filter: blur(8px);
+}
+
+.blur2 {
+    background: rgb(155, 84, 18);
+
+}
+
+h1 {
+    width: 90%;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    font-weight: 600;
+    font-size: clamp(2rem, 8vw, 2.6rem);
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+.h2 {
+    width: 100%;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    font-weight: 600;
+    font-size: clamp(2rem, 8vw, 3.6rem);
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+.h22 {
+    width: 100%;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    font-weight: 600;
+    font-size: clamp(2rem, 8vw, 2.6rem);
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+
+section{
+    max-width: 1200px;
+    
+    margin: auto;
+  
+}
+
+
+.imgPD {
+    height: 100%;
+    width: 100%;
+
+
+    object-fit: cover;
+}
+
+.visor-img {
+    aspect-ratio: 4/4;
+    object-fit: cover;
+
+}
+.img-plato{
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+.xd {
+    transition: all;
+    animation: scale 1s ease-in-out;
+}
+
+.content {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid orange;
+    z-index: 1000;
+    background-color: #00000060;
+    padding: 5px 30px;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.club-canvas {
+    /* El canvas se extiende para cubrir todo el viewport */
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    /* Fondo */
+    background-color: #000;
+
+}
+
+.ingredients-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.ingredients-wrapper.open {
+
+    max-height: 500px;
+}
+
+
+.posicion {
+    object-fit: cover;
+    object-position: 50% 66%;
+    mask-image: -moz-linear-gradient(2% 100%);
+    mask-image: linear-gradient(to right,
+            transparent 0%,
+            black 80%);
+    -webkit-mask-image: linear-gradient(to right,
+            transparent 0%,
+            black 80%);
+}
+
+.smt {
+    padding: 0px 80px;
+}
+
+.smw {
+    width: 350px;
+    max-width: 70dvw;
+    min-width: 200px;
+}
+
+.smw2 {
+    width: 110px;
+
+    max-width: 150px;
+    min-width: 50px;
+}
+
+.smww {
+    padding: 0px 40px;
+}
+
+
+/* 1. Definir el ancho de la barra de desplazamiento */
+.contenedor-con-scroll::-webkit-scrollbar {
+  width: 8px; /* Define el ancho de la barra vertical */
+  height: 10px; /* Define la altura de la barra horizontal (si aplica) */
+}
+
+/* 2. Estilo del *Track* (la pista o fondo por donde se desliza el pulgar) */
+.contenedor-con-scroll::-webkit-scrollbar-track {
+  background: rgba(65, 65, 65, 0.637); 
+  border-radius: 10px; /* Bordes redondeados para el track */
+}
+
+/* 3. Estilo del *Thumb* (el pulgar o control que el usuario arrastra) */
+.contenedor-con-scroll::-webkit-scrollbar-thumb {
+  background: #888; /* Color del pulgar (gris medio) */
+  border-radius: 10px; /* Bordes redondeados para el pulgar */
+  border: 3px solid #05050500; /* Un borde para que se vea más delgado dentro del track */
+}
+
+/* 4. Estilo del Thumb al pasar el ratón (Hover) */
+.contenedor-con-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color más oscuro al pasar el ratón */
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    /* La sintaxis estándar */
+    .smt {
+        padding: 0px 0px;
+    }
+
+    .a {
+        display: none;
+    }
+
+    .flechas {
+        display: block;
+        position: relative;
+        translate: initial;
+
+    }
+
+
+}
