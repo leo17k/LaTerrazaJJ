@@ -20,7 +20,7 @@ const PerroCaliente = ({ antojo }) => {
                 )}
             </div>
             {image && (
-                <img src={`../public/IMG/${image}`} alt={name} className="w-full h-auto object-cover rounded-b-2xl" />
+                <img src={`/IMG/${image}`} alt={name} className="w-full h-auto object-cover rounded-b-2xl" />
             )}
         </div>
     );

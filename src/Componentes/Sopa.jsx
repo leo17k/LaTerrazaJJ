@@ -6,7 +6,7 @@ const Sopa = ({ SOPA}) => {
     return (<>
         <div className="flex flex-col w-[200px]  shadow-xl gap-2 shadow-gray-500/10 text-gray-200 bg-gray-900/30 backdrop-blur-lg p-4 rounded-2xl">
             <div className="flex items-center justify-center">
-                <img className="w-[150px] drop-shadow-2xl drop-shadow-gray-950/20   h-auto" src={`../public/IMG/${image}`} alt="" />
+                <img className="w-[150px] drop-shadow-2xl drop-shadow-gray-950/20   h-auto" src={`/IMG/${image}`} alt="" />
             </div>
 
             <div className="flex flex-col items-center">

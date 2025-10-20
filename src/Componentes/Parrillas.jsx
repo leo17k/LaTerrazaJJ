@@ -9,7 +9,7 @@ const Parrilla = ({parrilla}) => {
                 <div className="flex-shrink-0">
                     <img 
                         className="w-[100px] h-[100px] rounded-full object-cover border-2 border-amber-100/30"
-                        src={`../public/IMG/${parrilla.image}`} 
+                        src={`/IMG/${parrilla.image}`} 
                         alt={parrilla.name}
                     />
                 </div>

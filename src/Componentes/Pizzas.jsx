@@ -88,7 +88,7 @@ const PizzasCategory = () => {
                 <div className="relative z-10 w-full max-w-[80dvw] transform  scale-110">
                     {/* Placeholder para la imagen de la pizza */}
                     <div className="bg-cover bg-center rounded-full shadow-2xl overflow-hidden">
-                        <img src="../public/IMG/Pizzaa.png" className="" alt="" />
+                        <img src="/IMG/Pizzaa.png" className="" alt="" />
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@ const PizzaBuilder = ({ PIZZAS = [] }) => {
     const orbitRadius = '17ch'; 
     const elementSize = '20ch'; 
     // const ww = window.width; // No usado, se elimina
-    const ruta = "../public/IMG/";
+    const ruta = "/IMG/";
 
     // Lógica de Rotación Centralizada (Enfoque en 0 grados / Arriba)
     const containerRotation = -selectedIndex * angleStep; 

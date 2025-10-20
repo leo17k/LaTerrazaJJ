@@ -92,7 +92,7 @@ const ChickenPlatoCard = ({ plato, index }) => {
 
 
             >
-                <img src={`../public/IMG/${image}`} className={`object-contain  w-full  h-auto scale-190  ${isOdd ?'translate-x-[-20%]': 'translate-x-[20%]'}  md:scale-150`} alt="" />
+                <img src={`/IMG/${image}`} className={`object-contain  w-full  h-auto scale-190  ${isOdd ?'translate-x-[-20%]': 'translate-x-[20%]'}  md:scale-150`} alt="" />
             </div>
 
         </div>

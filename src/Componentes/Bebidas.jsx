@@ -12,7 +12,7 @@ const Bebida = ({ bebida }) => {
                 <img
                     // Aplicamos una animación de 'slide-in-right' a la imagen.
                     className='w-[200px] drop-shadow-2xl drop-shadow-black md:w-[300px] relative h-auto object-cover z-10 transition-opacity duration-500 animate-slideInRight'
-                    src={`../public/IMG/${image}`}
+                    src={`/IMG/${image}`}
                     alt={name} 
                 />
             </div>
@@ -49,7 +49,7 @@ const BebidaCategory = ({ BEBIDAS }) => {
     useEffect(() => {
         BEBIDAS.forEach(bebida => {
             const img = new Image();
-            img.src = `../public/IMG/${bebida.image}`;
+            img.src = `/IMG/${bebida.image}`;
         });
     }, [BEBIDAS]);
     return (
