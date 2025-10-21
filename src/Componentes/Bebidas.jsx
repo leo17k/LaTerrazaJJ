@@ -7,22 +7,26 @@ const Bebida = ({ bebida }) => {
     return (
         // Aplicamos la animación principal de entrada a todo el contenedor de la bebida.
         // 'animate-fadeIn' será una clase CSS personalizada que definiremos.
-        <div className='flex relative items-center z-1 animate-fadeIn'> 
-            <div className='relative  h-[284px] md:h-[540px]'> 
+        <div className='flex items-center gap-4 md:gap-8 p-4 animate-fadeIn'>
+            <div className='relative w-[100px] h-[200px] md:w-[150px] md:h-[300px] flex-shrink-0'>
                 <img
-                    // Aplicamos una animación de 'slide-in-right' a la imagen.
-                    className='w-[200px] drop-shadow-2xl drop-shadow-black md:w-[300px] relative h-auto object-cover z-10 transition-opacity duration-500 animate-slideInRight'
+                    className='w-full h-full object-contain drop-shadow-2xl'
                     src={`/IMG/${image}`}
-                    alt={name} 
+                    alt={name}
+                    loading='lazy'
                 />
             </div>
-            <h2 className='text-[40px] leading-normal md:text-[55px] w-[200px] break-words md:w-[200px]
-             font-impact font-semibold [transform:skewX(-5deg)] uppercase
-             md:translate-x-[-90px] translate-x-[-50px] translate-y-[30px] md:translate-y-[70px] z-0 animate-slideInLeft'>
-                 {/* Aplicamos una animación de 'slide-in-left' al texto. */}
-                {name}
-            </h2>
-          
+            
+            <div className='flex flex-col'>
+                <h2 className='text-3xl md:text-5xl font-impact font-semibold text-white [transform:skewX(-15deg)] break-words w-[200px] md:w-max'>
+                    {name}
+                </h2>
+                {price && (
+                    <span className='text-2xl md:text-3xl font-bold text-yellow-400 [transform:skewX(-15deg)]'>
+                        ${price.toFixed(2)}
+                    </span>
+                )}
+            </div>
         </div>
     );
 };
@@ -53,7 +57,7 @@ const BebidaCategory = ({ BEBIDAS }) => {
                 Bebidas
             </h2>
 
-            <div className='flex justify-center gap-10 flex-wrap '>
+            <div className='flex justify-center  flex-wrap '>
 
                 <Bebida
                     key={BEBIDAS[indexBebida].name}

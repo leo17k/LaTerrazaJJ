@@ -4,7 +4,7 @@ const PerroCaliente = ({ antojo }) => {
     const { name, price, description, image } = antojo;
 
     return (
-         <div className="flex w-[350px] max-w-[100dvw] gap-5 items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl  hover:bg-white/10 transition-colors">
+         <div className="flex w-[350px] gap-5 items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl  hover:bg-white/10 transition-colors">
             {image && (
                 <div className="flex-shrink-0">
                     <img 

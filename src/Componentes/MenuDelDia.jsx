@@ -8,7 +8,7 @@ const Plato = ({ plato }) => {
        
             <div className="flex-shrink-0">
                 <img 
-                    className="w-[100px] h-[100px] rounded-full object-cover border-2 border-amber-100/30"
+                    className="w-[80px] h-[80px] rounded-full object-cover border-2 border-amber-100/30"
                     src={`/IMG/${image}`} 
                     alt={name}
                 />
