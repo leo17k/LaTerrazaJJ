@@ -7,7 +7,7 @@ const Bebida = ({ bebida }) => {
     return (
         // Aplicamos la animación principal de entrada a todo el contenedor de la bebida.
         // 'animate-fadeIn' será una clase CSS personalizada que definiremos.
-        <div className='flex items-center gap-4 md:gap-8 p-4 animate-fadeIn'>
+        <div className='flex items-center gap-4 md:gap-8 p-4 animate-fadeIn w-full max-w-2xl mx-auto'>
             <div className='relative w-[100px] h-[200px] md:w-[150px] md:h-[300px] flex-shrink-0'>
                 <img
                     className='w-full h-full object-contain drop-shadow-2xl'
@@ -17,14 +17,27 @@ const Bebida = ({ bebida }) => {
                 />
             </div>
             
-            <div className='flex flex-col'>
-                <h2 className='text-3xl md:text-5xl font-impact font-semibold text-white [transform:skewX(-15deg)] break-words w-[200px] md:w-max'>
+            <div className='flex flex-col justify-start items-start w-[200px]'>
+                <h2 className='text-3xl md:text-4xl w-[200px] break-words font-impact font-semibold text-white [transform:skewX(-15deg)] whitespace-normal'>
                     {name}
                 </h2>
                 {price && (
-                    <span className='text-2xl md:text-3xl font-bold text-yellow-400 [transform:skewX(-15deg)]'>
-                        ${price.toFixed(2)}
-                    </span>
+                    <>
+                        <span className='text-2xl md:text-3xl font-bold text-yellow-400 [transform:skewX(-15deg)]'>
+                            ${price.toFixed(2)}
+                        </span>
+                        <div>
+
+                        <a 
+                            href={`https://wa.me/584128589365?text=Hola, quiero una bebida: ${encodeURIComponent(name)}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-2 inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded-2xl transition duration-300 text-sm w-max mx-auto"
+                            >
+                            PEDIR
+                        </a>
+                            </div>
+                    </>
                 )}
             </div>
         </div>
@@ -65,7 +78,7 @@ const BebidaCategory = ({ BEBIDAS }) => {
                       isActive={indexBebida}
 
                 />
-           <ul className='text-[20px] mt-20 md:mt-0 h-[284px] md:h-[440px] contenedor-con-scroll overflow-y-auto px-10 flex flex-col justify-start [transform:skewX(5deg)] ml-4 py-4'>
+           <ul className='text-[20px] mt-5 md:mt-0 h-[284px] md:h-[440px] contenedor-con-scroll overflow-y-auto px-4 md:px-6 flex flex-col justify-start [transform:skewX(5deg)] ml-4 py-4 w-[350px]'>
                     {BEBIDAS.map((bebida, index) => (
                         <li 
                             className={`cursor-pointer text-shadow-2xs hover:scale-110 transition-all duration-200 py-2 px-4 rounded ${

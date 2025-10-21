@@ -13,7 +13,14 @@ const Sopa = ({ SOPA}) => {
                 <h3 className="text-xl text-center font-bold">{name}</h3>
                 <p className="text-center">{description}</p>
                 <p className="px-4 py-2 mt-2 font-bold text-amber-50 bg-amber-900/60 rounded-2xl">{price.toFixed(2)}$</p>
-
+                <a 
+                    href={`https://wa.me/584128589365?text=Hola, quiero una sopa: ${encodeURIComponent(name)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block bg-amber-900/60 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded-2xl transition duration-300 text-sm w-max text-center"
+                >
+                    PEDIR
+                </a>
             </div>
         </div>
 

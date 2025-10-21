@@ -26,6 +26,15 @@ const ChickenPlatoCard = ({ plato, index }) => {
         <div
             className={`relative ${style} h-max] rounded-[30px] p-2 flex items-center shadow-2xl my-8 max-w-xl mx-auto overflow-hidden transition-all duration-300 hover:shadow-red-800/50 ${rowDirection}`}
         >
+            {/* Botón flotante PEDIR */}
+            <a 
+                href={`https://wa.me/584128589365?text=Hola, quiero un ${encodeURIComponent(name)} ${porcionSeleccionada.size}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute bottom-4 right-4 bg-red-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full text-sm shadow-lg transition-all duration-300 transform hover:scale-105 z-20"
+            >
+                PEDIR
+            </a>
 
             {/* 1. SECCIÓN DE TEXTO (Nombre, Precio) */}
             {/* La flexibilidad del div garantiza que ocupe el espacio restante */}
@@ -92,7 +101,7 @@ const ChickenPlatoCard = ({ plato, index }) => {
 
 
             >
-                <img src={`/IMG/${image}`} className={`object-contain  w-full  h-auto scale-190  ${isOdd ?'translate-x-[-20%]': 'translate-x-[20%]'}  md:scale-150`} alt="" />
+                <img src={`/IMG/${image}`} className={`object-contain  w-full  h-auto scale-350  ${isOdd ?'translate-x-[-20%]': 'translate-x-[20%]'}  md:scale-150`} alt="" />
             </div>
 
         </div>

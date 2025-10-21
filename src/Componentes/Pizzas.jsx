@@ -7,39 +7,58 @@ import './Assets/Pizza.css';
 
 
 const Plato = ({ plato }) => {
-    const { name, price, description } = plato; // Asume que 'description' podría ser string o array
+    const { name, price, priceFamiliar, description } = plato; 
     const [priceBS, setPriceBS] = useState(null);
+    const [priceFamiliarBS, setPriceFamiliarBS] = useState(null);
 
     // *** LÓGICA DE CONVERSIÓN DE PRECIOS ***
     useEffect(() => {
-        // En un entorno real, ejecutarías tu fetch aquí
-        // fetch("https://ve.dolarapi.com/v1/dolares/oficial")
-        // ... (tu lógica de fetch anterior) ...
         const tasaFija = 36.0; // Tasa ficticia USD a BS
         if (price) setPriceBS((tasaFija * price).toFixed(2));
-    }, [price]); 
+        if (priceFamiliar) setPriceFamiliarBS((tasaFija * priceFamiliar).toFixed(2));
+    }, [price, priceFamiliar]); 
     // ***************************************
 
     return (
-        <div className="flex  justify-between items-start border-b border-gray-200 py-3">
-            <div className="w-4/5">
-                <h3 className="text-lg font-semibold text-gray-800">{name}</h3>
-                {/* --- LÓGICA PARA LA DESCRIPCIÓN (string o array) --- */}
-                <p className="text-sm text-gray-500 italic">
-                    {
-                        Array.isArray(description) 
-                            ? description.join(', ') // Si es un array, únelo con comas
-                            : description            // Si no, renderízalo directamente
-                    }
-                </p>
-                {/* -------------------------------------------------- */}
+        <div className="flex flex-col border-b border-gray-200 py-4">
+            <div className="flex justify-between items-start">
+                <div className="w-3/5">
+                    <h3 className="text-lg font-semibold text-gray-800">{name}</h3>
+                    <p className="text-sm text-gray-500 italic">
+                        {Array.isArray(description) ? description.join(', ') : description}
+                    </p>
+                </div>
+                
+                {/* Precios */}
+                <div className="w-2/5 pl-4">
+                    <div className="flex justify-between items-center mb-1">
+                        <span className="text-xs text-gray-600">Mediana:</span>
+                        <div className="text-right">
+                            <span className="font-bold text-green-600">${price.toFixed(2)}</span>
+                            <p className="text-xs text-gray-500">Bs {priceBS || '...'}</p>
+                        </div>
+                    </div>
+                    {priceFamiliar && (
+                        <div className="flex justify-between items-center mb-2">
+                            <span className="text-xs text-gray-600">Familiar:</span>
+                            <div className="text-right">
+                                <span className="font-bold text-green-600">${priceFamiliar.toFixed(2)}</span>
+                                <p className="text-xs text-gray-500">Bs {priceFamiliarBS || '...'}</p>
+                            </div>
+                        </div>
+                    )}
+                </div>
             </div>
-            <div className="w-1/5 text-right font-bold text-lg text-green-600">
-                ${price.toFixed(2)}
-                <p className="text-xs font-normal text-gray-500 mt-1">
-                    Bs {priceBS === null ? '...' : priceBS}
-                </p>
-            </div>
+            
+            {/* Botón PEDIR */}
+            <a 
+                href={`https://wa.me/584128746822?text=Hola, quiero una pizza ${encodeURIComponent(name)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 bg-orange-600 hover:bg-orange-700 text-white text-center font-bold py-2 px-4 rounded-full transition duration-300 text-sm w-full md:w-auto"
+            >
+                PEDIR AHORA
+            </a>
         </div>
     );
 };
@@ -252,11 +271,30 @@ const PizzaBuilder = ({ PIZZAS = [] }) => {
                         </h1>
                         <p className='text-sm text-gray-500 mt-2'>{selectedPizza.ingredients.join(', ')}</p>
                     </div>
-                       <div className='text-center mt-2 '>
-                        <p className='text-2xl font-bold text-green-600'>
-                           M: {selectedPizza.price.mediana}$ -
-                           F: {selectedPizza.price.familiar}$ 
-                        </p>
+                       <div className='text-center mt-4 space-y-2'>
+                        <div className='flex justify-center items-center gap-4'>
+                            <div className='text-center'>
+                                <p className='text-sm text-gray-600'>Mediana</p>
+                                <p className='text-2xl font-bold text-green-600'>
+                                    ${selectedPizza.price.mediana}
+                                </p>
+                            </div>
+                            <div className='h-8 w-px bg-gray-300'></div>
+                            <div className='text-center'>
+                                <p className='text-sm text-gray-600'>Familiar</p>
+                                <p className='text-2xl font-bold text-green-600'>
+                                    ${selectedPizza.price.familiar}
+                                </p>
+                            </div>
+                        </div>
+                        <a 
+                            href={`https://wa.me/584128589365?text=Hola, quiero una pizza ${encodeURIComponent(selectedPizza.name)}`}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='mt-3 inline-block bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 text-sm'
+                        >
+                            PEDIR AHORA
+                        </a>
                     </div>
                 </div>
 

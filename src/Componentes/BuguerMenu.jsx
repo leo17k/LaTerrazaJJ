@@ -70,12 +70,15 @@ const BurguerMenu = () => {
                 </p>
 
                 <div className="flex space-x-4 mb-8">
-                    <button className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                    <a 
+                        href={`https://wa.me/584128746822?text=Hola, quiero una ${encodeURIComponent(BURGERS[currentBurgerIndex].name)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block text-center"
+                    >
                         PEDIR
-                    </button>
-                    <button className="border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-black transition duration-300">
-                        MENU
-                    </button>
+                    </a>
+                   
                 </div>
 
                 {/* Indicadores de diapositivas (puntos) */}

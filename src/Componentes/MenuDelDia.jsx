@@ -21,7 +21,15 @@ const Plato = ({ plato }) => {
                     </div>
                 </div>
                 <div className="w-full h-px bg-amber-100/20 my-2"></div>
-                <p className="text-gray-200">{description}</p>
+                <p className="text-gray-200 mb-3">{description}</p>
+                <a 
+                    href={`https://wa.me/584128589365?text=Hola, quiero el plato del día: ${encodeURIComponent(name)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 text-sm w-full text-center"
+                >
+                    PEDIR AHORA
+                </a>
             </div>
         </div>
     );

@@ -31,6 +31,14 @@ const ComboCard = ({ combo }) => {
                             </li>
                         ))}
                     </ul>
+                    <a 
+                        href={`https://wa.me/584128589365?text=Hola, quiero el ${encodeURIComponent(combo.name)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-4 inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 text-sm w-full text-center"
+                    >
+                        PEDIR AHORA
+                    </a>
                 </div>
             </div>
         </div>
