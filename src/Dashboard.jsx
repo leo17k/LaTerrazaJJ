@@ -160,7 +160,7 @@ function Dashboard() {
                     <div className="visor-img mt-5 ">
                         <img
                             className="imgPD "
-                            src="../public/IMG/Diseño_sin_título-removebg-preview.png"
+                            src="/IMG/Diseño_sin_título-removebg-preview.png"
                             alt="" />
                     </div>
 

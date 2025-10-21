@@ -485,7 +485,7 @@ const ANTOJOS = [
         name: "SalchiPapa",
         price: 9.00,
         description: "Pan artesanal, doble salchicha, queso gratinado, tocineta",
-        image: "SalchiPapa.png"
+        image: "Salchipapa.png"
     },
     {
         name: "Papa Loca",

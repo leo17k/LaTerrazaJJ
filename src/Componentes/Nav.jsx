@@ -55,7 +55,7 @@ const Nav = () => {
         >
             <div className="container flex justify-between items-center smt">
                 <div className="flex gap-2 justify-center items-center">
-                    <img src="../public/vite.png" alt="" className="h-20 object-contain" />
+                    <img src="vite.png" alt="" className="h-20 object-contain" />
                 </div>
 
                 <div className="flex justify-center gap-8 a items-center px-10">
