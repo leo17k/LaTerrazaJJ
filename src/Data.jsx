@@ -370,14 +370,14 @@ const PARRILLAS = [
         name: "PARRILLA MIXTA 1P",
         description: "Incluye: Yuca, ensalada y papas fritas",
         price: 8,
-        image: 'Combo5.png',
+        image: 'Parrilla mixta 1.png',
         style: 'bg-gray-100',
     },
     {
         name: "PARRILLA MIXTA 2P",
         description: "Incluye: Yuca, ensalada y papas fritas",
         price: 16.50,
-        image: 'Combo5.png',
+        image: 'Parrilla mixta 2.png',
         style: 'bg-gray-100',
     },
     {
