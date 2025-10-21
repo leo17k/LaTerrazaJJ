@@ -32,7 +32,7 @@ const Parrilla = ({parrilla}) => {
 const ParrillaCategory = ({PARRILLAS = []}) => {
     return (
         <section id="PARRILLAS" className="h-max bg-parrillas p-6 flex flex-col items-start bg-gradient-to-br from-gray-900 to-amber-950">
-            <h2 className="text-4xl  w-full font-extrabold text-center text-white mb-12 border-b-4 border-yellow-500 pb-2">
+            <h2 className="text-4xl   font-extrabold text-center text-white mb-12 border-b-4 border-yellow-500 pb-2">
                 Nuestras Parrillas
             </h2>
             

@@ -30,23 +30,17 @@ const PerroCaliente = ({ antojo }) => {
 
 const PerrosCalientesCategory = ({ ANTOJOS = []}) => {
     return (
-        <section id='ANTOJOS' className="min-h-screen bg-parrillas py-12 px-4 bg-gradient-to-br from-gray-900 to-red-950">
-            <div className="max-w-6xl mx-auto">
-                    <h2 className="text-4xl w-max font-extrabold text-center text-white mb-12 border-b-4 border-yellow-500 pb-2">
-              
-                    Nuestros Antojos
-                </h2>
-                
-                
-                    <div className="mb-12">
-                     
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {ANTOJOS.map((antojo, index) => (
-                                <PerroCaliente antojo={antojo} />
-                            ))}
-                        </div>
-                    </div>
-           
+         <section id="PARRILLAS" className="h-max bg-parrillas p-6 flex flex-col items-start bg-gradient-to-br from-gray-900 to-amber-950">
+            <h2 className="text-4xl  font-extrabold text-center text-white mb-12 border-b-4 border-yellow-500 pb-2">
+                Nuestros Antojos
+            </h2>
+            
+            <div className="flex-1 justify-start max-w-[90dvw] pr-2 w-4xl ">
+                <div className="space-y-4 flex flex-wrap gap-2">
+                    {ANTOJOS.map((antojo) => (
+                        <PerroCaliente key={antojo.id} antojo={antojo} />
+                    ))}
+                </div>
             </div>
         </section>
     );

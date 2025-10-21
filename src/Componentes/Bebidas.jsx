@@ -22,12 +22,7 @@ const Bebida = ({ bebida }) => {
                  {/* Aplicamos una animación de 'slide-in-left' al texto. */}
                 {name}
             </h2>
-             <h2 className='text-[40px] leading-normal md:text-[55px] w-[200px] break-words md:w-[200px]
-             font-impact font-semibold [transform:skewX(-5deg)] uppercase
-             md:translate-x-[-90px] absolute top-1/2 text-green-500 left-[-50px] rotate-90 scale-[-100%] justify-end text-end translate-x-[-50px] translate-y-[30px] md:translate-y-[70px] z-0 animate-slideInLeft'>
-                 {/* Aplicamos una animación de 'slide-in-left' al texto. */}
-                {price}$
-            </h2>
+          
         </div>
     );
 };
@@ -69,14 +64,16 @@ const BebidaCategory = ({ BEBIDAS }) => {
            <ul className='text-[20px] mt-20 md:mt-0 h-[284px] md:h-[440px] contenedor-con-scroll overflow-y-auto px-10 flex flex-col justify-start [transform:skewX(5deg)] ml-4 py-4'>
                     {BEBIDAS.map((bebida, index) => (
                         <li 
-                            className={`cursor-pointer hover:scale-110 transition-all duration-200 py-2 px-4 rounded ${
+                            className={`cursor-pointer text-shadow-2xs hover:scale-110 transition-all duration-200 py-2 px-4 rounded ${
                                 index === indexBebida ? 'bg-white text-black' : 'text-white hover:bg-white/20'
                             }`}
                             onClick={() => setIndexBebida(index)} 
                             id={index}
                             key={index}
                         >
-                            {bebida.name}
+                            {bebida.name} <span className=' leading-normal w-[200px] break-words md:w-[200px]
+             font-impact font-semibold [transform:skewX(-5deg)] uppercase
+              text-green-500'>${bebida.price}$</span>
                         </li>
                     ))}
                 </ul>
