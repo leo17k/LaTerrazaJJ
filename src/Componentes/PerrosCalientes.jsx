@@ -4,24 +4,26 @@ const PerroCaliente = ({ antojo }) => {
     const { name, price, description, image } = antojo;
 
     return (
-        <div className="flex flex-col w-full max-w-[500px] gap-4 items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl hover:bg-white/10 transition-colors">
-            <div className="flex-grow w-full">
+         <div className="flex w-[350px] max-w-[100dvw] gap-5 items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl  hover:bg-white/10 transition-colors">
+            {image && (
+                <div className="flex-shrink-0">
+                    <img 
+                        className="w-[100px] h-[100px] rounded-full object-cover border-2 border-amber-100/30"
+                        src={`/IMG/${image}`} 
+                        alt={name}
+                    />
+                </div>
+            )}
+            <div className="flex-grow">
                 <div className="flex items-baseline justify-between gap-4">
-                    <h3 className="text-2xl font-bold text-white mb-6 border-b-2 border-yellow-500 pb-2 inline-block">{name}</h3>
-                    <div className="px-3 py-1 bg-yellow-600 text-white rounded-full font-semibold whitespace-nowrap">
+                    <h3 className="text-xl font-bold break-words text-white">{name}</h3>
+                    <div className="px-3  py-1 bg-amber-900/60 text-white rounded-full font-semibold whitespace-nowrap">
                         ${price.toFixed(2)}
                     </div>
                 </div>
-                {description && (
-                    <>
-               
-                        <p className="text-gray-200 text-sm">{description}</p>
-                    </>
-                )}
+                <div className="w-full h-px bg-amber-100/20 my-2"></div>
+                <p className="text-gray-200">{description}</p>
             </div>
-            {image && (
-                <img src={`/IMG/${image}`} alt={name} className="w-full h-auto object-cover rounded-b-2xl" />
-            )}
         </div>
     );
 };

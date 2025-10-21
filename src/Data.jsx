@@ -304,7 +304,7 @@ const BEBIDAS = [
     {
         name: "AGUA MINERAL",
         price: 1,
-        image: 'agua.png' // Placeholder image name
+        image: 'Agua.png' // Placeholder image name
     },
     {
         name: "ENERGIZANTES",
@@ -320,13 +320,13 @@ const BEBIDAS = [
     {
         name: "BUCHANAN'S",
         price: 60,
-        image: 'buchanans.png' // Placeholder image name
+        image: 'BUCHANANS.png' // Placeholder image name
     },
 
     {
         name: "GRANT",
         price: 20,
-        image: 'grant.png' // Placeholder image name
+        image: 'GRANT.png' // Placeholder image name
     },
     {
         name: "SANGRÍA CAROREÑA",
@@ -905,7 +905,150 @@ const COMBOS = [
         ],
         image: 'Combo33.png',
         style: 'bg-cyan-400',
-     
+        type: 'COMBO',
+    },
+    {
+        name: "COMBO 34",
+        price: 16.50,
+        platos: [
+            "3 Pizzas Margarita medianas",
+            "1 Refresco de 1 Litro"
+        ],
+        image: 'Combo34.png',
+        style: 'bg-blue-400',
+        type: 'COMBO',
+    },
+    {
+        name: "COMBO 35",
+        price: 16.50,
+        platos: [
+            "1 Pizza Margarita grande",
+            "1 Pizza mediana",
+            "1 Refresco de 1 Litro"
+        ],
+        image: 'Combo35.png',
+        style: 'bg-indigo-400',
+        type: 'COMBO',
+    },
+    {
+        name: "COMBO 36",
+        price: 15.00,
+        platos: [
+            "1 Shawarma mixto",
+            "1 Ración de papas",
+            "1 Refresco de 1 Litro"
+        ],
+        image: 'Combo36.png',
+        style: 'bg-purple-400',
+        type: 'COMBO',
+    },
+    {
+        name: "COMBO 37",
+        price: 11.50,
+        platos: [
+            "10 Empanadas",
+            "1 Refresco de 1 Litro"
+        ],
+        image: 'Combo37.png',
+        style: 'bg-red-400',
+        type: 'COMBO',
+    },
+    {
+        name: "COMBO 38",
+        price: 6.50,
+        platos: [
+            "5 Empanadas",
+            "1 Refresco de 1 Litro"
+        ],
+        image: 'Combo38.png',
+        style: 'bg-orange-400',
+        type: 'COMBO',
+    },
+    {
+        name: "COMBO 39",
+        price: 19.50,
+        platos: [
+            "5 Perros sencillos",
+            "4 Hamburguesas",
+            "1 Refresco"
+        ],
+        image: 'Combo39.png',
+        style: 'bg-yellow-400',
+        type: 'COMBO',
+    },
+    {
+        name: "COMBO 40",
+        price: 15.50,
+        platos: [
+            "1 Salchipapa",
+            "5 Perros sencillos",
+            "4 Hamburguesas sencillas",
+            "1 Refresco de 1 Litro"
+        ],
+        image: 'Combo40.png',
+        style: 'bg-green-400',
+        type: 'COMBO',
+    },
+    {
+        name: "COMBO 41",
+        price: 18.00,
+        platos: [
+            "1 Papa loca",
+            "1 Ración de nuggets",
+            "1 Refresco de 1 Litro"
+        ],
+        image: 'Combo41.png',
+        style: 'bg-blue-500',
+        type: 'COMBO',
+    },
+    {
+        name: "COMBO 42",
+        price: 10.00,
+        platos: [
+            "Alas BBQ",
+            "Ración de papas"
+        ],
+        image: 'Combo42.png',
+        style: 'bg-indigo-500',
+        type: 'COMBO',
+    },
+    {
+        name: "COMBO 43",
+        price: 10.00,
+        platos: [
+            "5 Chorizos",
+            "Ensalada",
+            "Ración de papas",
+            "1 Refresco de 1 Litro"
+        ],
+        image: 'Combo43.png',
+        style: 'bg-gray-500',
+        type: 'COMBO',
+    },
+    {
+        name: "COMBO 44",
+        price: 16.00,
+        platos: [
+            "1 Pizza mediana Margarita",
+            "Ración de papas",
+            "5 Perros Calientes",
+            "1 Refresco de 1 Litro"
+        ],
+        image: 'Combo44.png',
+        style: 'bg-teal-500',
+        type: 'COMBO',
+    },
+    {
+        name: "COMBO 45",
+        price: 25.00,
+        platos: [
+            "Costillas BBQ",
+            "Ración de papas",
+            "1 Refresco de 1 Litro"
+        ],
+        image: 'Combo45.png',
+        style: 'bg-cyan-500',
+        type: 'COMBO',
     }
 ];
 
