@@ -5,13 +5,13 @@ const BURGERS = [
         name: 'HAMBURGUESA DE POLLO',
         desc: 'Pechuga de pollo a la parrilla, aderezo especial, aguacate y cebolla caramelizada.',
         price: '$6.00',
-        image: '/IMG/pollo.png', // Reemplaza con la URL de la imagen real
+        image: '/IMG/Pollo.png', // Reemplaza con la URL de la imagen real
     },
     {
         name: 'HAMBURGUESA DE CARNE',
         desc: 'Doble porción de carne premium, tocino crujiente, aros de cebolla y salsa BBQ.',
         price: '$5.00',
-        image: '/IMG/carne.png', // Reemplaza con la URL de la imagen real
+        image: '/IMG/Carne.png', // Reemplaza con la URL de la imagen real
     },
     {
         name: 'HAMBURGUESA MIXTA',
