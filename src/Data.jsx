@@ -86,10 +86,10 @@ const POLLOS = [
         name: 'Pollo Broaster',
         description: 'Pollo empanizado y frito crujiente y delicioso',
         portions: [
-            { size: '1/4', price: 6.50, weight: '1/4 de pollo con contorno' },
-            { size: '1/2', price: 11.00, weight: '1/2 pollo con contorno' },
-            { size: 'Entero', price: 22.00, weight: 'Pollo entero con contorno' },
-            { size: 'Solo', price: 16.50, weight: 'Pollo solo' }
+            { size: '1/4', price: 5.00, weight: '1/4 de pollo con contorno' },
+            { size: '1/2', price: 10.00, weight: '1/2 pollo con contorno' },
+            { size: 'Entero', price: 19.50, weight: 'Pollo entero con contorno' },
+            { size: 'Solo', price: 15.00, weight: 'Pollo solo' }
         ],
         image: 'Broster.png',
         style: 'bg-white',
@@ -98,10 +98,10 @@ const POLLOS = [
         name: 'Pollo Asado',
         description: 'Pollo asado jugoso y delicioso',
         portions: [
-            { size: '1/4', price: 5.00, weight: '1/4 con contorno' },
-            { size: '1/2', price: 9.50, weight: '1/2 con contorno' },
-            { size: 'Entero', price: 18.00, weight: 'Pollo entero con contorno' },
-            { size: 'Solo', price: 15.00, weight: 'Pollo solo' }
+            { size: '1/4', price: 4.00, weight: '1/4 con contorno' },
+            { size: '1/2', price: 8.50, weight: '1/2 con contorno' },
+            { size: 'Entero', price: 17.00, weight: 'Pollo entero con contorno' },
+            { size: 'Solo', price: 14.00, weight: 'Pollo solo' }
         ],
         image: 'Asado.png',
         style: 'bg-white',
@@ -109,7 +109,7 @@ const POLLOS = [
 
     {
         name: "Costillas BBQ",
-        price: 11.00,
+        price: 8.00,
         description: "Costillas de cerdo bañadas en salsa BBQ",
         image: "CostillasBBQ.png",
         portions: [
@@ -123,7 +123,7 @@ const POLLOS = [
         name: 'Alitas BBQ',
         description: 'Asadas a la perfección con salsa BBQ ahumada',
         portions: [
-            { size: '5 Piezas', price: 4.00, weight: '5 piezas' },
+            { size: '5 Piezas', price: 6.00, weight: '5 piezas' },
 
         ],
         image: 'AlitasBBQ.png',
@@ -143,14 +143,14 @@ const SOPAS = [
     {
         name: "Sopa de Mondogo",
         description: "Caldo de mondogo con yuca, topocho, yansin, ahuyama, platano maduro para un sabor dulce",
-        price: 3.50,
+        price: 3.00,
         image: 'Mondongo.png',
         style: 'bg-white',
     },
     {
         name: "Sopa de Menestron",
         description: "Caldo de menestron con verduras, caraotas rojas y pasta",
-        price: 3.50,
+        price: 3.00,
         image: 'Menestron.png',
         style: 'bg-white',
     },
@@ -166,31 +166,31 @@ const MENUDELDIA = [
     {
         name: "ARROZ CHINO",
         description: "Exquisito arroz frito con una mezcla de vegetales y proteínas (pollo, carne, jamón).",
-        price: 3.50,
+        price: 3.00,
         image: 'ArrozChino.webp',
     },
     {
         name: "SHAWARMA DE POLLO",
         description: "Tiras de pollo especiado servido en pan de pita con salsa de la casa y vegetales frescos.",
-        price: 10,
+        price: 8,
         image: 'ShawarmaPollo.jpg',
     },
     {
         name: "SHAWARMA DE CARNE",
         description: "Jugosas tiras de carne marinada servida en pan de pita con salsa y vegetales.",
-        price: 10,
+        price: 8,
         image: 'ShawarmaCarne.jpg',
     },
     {
         name: "SHAWARMA MIXTO",
         description: "Combinación de pollo y carne servido en pan de pita con salsa y vegetales.",
-        price: 10,
+        price: 8,
         image: 'ShawarmaMixta.jpg',
     },
     {
         name: "TEQUEÑOS",
         description: "Deliciosos dedos de queso fritos envueltos en masa crujiente, perfectos para compartir.",
-        price: 5,
+        price: 4,
         image: 'Tequeños.jpg',
     },
     {
@@ -202,7 +202,7 @@ const MENUDELDIA = [
     {
         name: "NUGETS DE POLLO",
         description: "Tiernos trozos de pollo apanados y fritos, ideales para un snack o acompañamiento.",
-        price: 5,
+        price: 6,
         image: 'Nuggets.jpg',
     },
 
@@ -210,7 +210,7 @@ const MENUDELDIA = [
     {
         name: "CLUB HOUSE",
         description: "Sandwich de triple capa con jamón, queso, pollo, tocineta, lechuga y tomate.",
-        price: 10,
+        price: 8,
         image: 'ClubHouse.jpeg',
     },
     {
@@ -266,24 +266,24 @@ const BEBIDAS = [
     {
         name: "Polarcita",
         description: "Agua",
-        price: 1,
+        price: 1.10,
         image: 'Polar.png',
     },
     {
         name: "Polar light",
         description: "Agua",
-        price: 1,
+        price: 1.10,
         image: 'PolarClara.png',
     },
     {
         name: "Black & White",
         description: "Agua",
-        price: 1,
+        price: 35,
         image: 'BlackandWhite.png',
     },
     {
         name: "JUGOS NATURALES",
-        price: 2,
+        price: 2.50,
         image: 'JugoNatural.png' // Placeholder image name
     },
     {
@@ -308,49 +308,49 @@ const BEBIDAS = [
     },
     {
         name: "ENERGIZANTES",
-        price: 2,
+        price: 2.50,
         image: 'Energizante.png' // Placeholder image name
     },
 
     {
         name: "OLD PARR",
-        price: 60,
+        price: 65,
         image: 'OldPar.png' // Placeholder image name
     },
     {
         name: "BUCHANAN'S",
-        price: 60,
+        price: 65,
         image: 'BUCHANANS.png' // Placeholder image name
     },
 
     {
         name: "GRANT",
-        price: 20,
+        price: 25,
         image: 'GRANT.png' // Placeholder image name
     },
     {
         name: "SANGRÍA CAROREÑA",
-        price: 15,
+        price: 20,
         image: 'Sangria.png' // Placeholder image name
     },
     {
         name: "BODEGA 1.800",
-        price: 15,
+        price: 20,
         image: 'Bodega1800.png' // Placeholder image name
     },
     {
         name: "HIHGCLASS",
-        price: 15,
+        price: 20,
         image: 'HighClass.png' // Placeholder image name
     },
     {
         name: "CALAZAN",
-        price: 15,
+        price: 20,
         image: 'CALAZAN.png' // Placeholder image name
     },
     {
         name: "5 ESTRELLAS",
-        price: 15,
+        price: 20,
         image: '5estrellas.png' // Placeholder image name
     },
     {
@@ -360,7 +360,7 @@ const BEBIDAS = [
     },
     {
         name: "MONEDA DE ORO",
-        price: 15,
+        price: 20,
         image: 'MONEDADEORO.png' // Placeholder image name
     }
 ]
@@ -413,13 +413,13 @@ const PARRILLAS = [
     {
         name: "COCHINO ASADO",
         description: null, // No hay descripción adicional visible
-        price: 16,
+        price: 15,
         image: 'Cochino Asado.webp' // Marcador de posición
     },
     {
         name: "CARNE ASADA",
         description: null, // No hay descripción adicional visible
-        price: 20,
+        price: 15,
         image: 'Carne-Asada-main-1.webp' // Marcador de posición
     },
     {
@@ -483,19 +483,19 @@ const ANTOJOS = [
 
     {
         name: "SalchiPapa",
-        price: 9.00,
+        price: 7.00,
         description: "Pan artesanal, doble salchicha, queso gratinado, tocineta",
         image: "Salchipapa.png"
     },
     {
         name: "Papa Loca",
-        price: 11.00,
+        price: 8.00,
         description: "Pan artesanal, doble salchicha, queso gratinado, tocineta",
         image: "Papa Loca.png"
     },
     {
         name: "TerraPapa",
-        price: 11.00,
+        price: 8.00,
         description: "Pan artesanal, doble salchicha, queso gratinado, tocineta",
         image: "Terra Papa.png"
     },
@@ -537,7 +537,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 2",
-        price: 40.00,
+        price: 35.00,
         platos: [
             "4 Cachapas con queso",
             "1 Pollo asado",
@@ -550,7 +550,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 3",
-        price: 18.00,
+        price: 15.00,
         platos: [
             "2 Arroz Chino",
             "1/2 Pollo a la Broaster",
@@ -562,7 +562,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 4",
-        price: 15.00,
+        price: 10.00,
         platos: [
             "2 Pasta a la Boloña",
             "2 Sopas de Res",
@@ -574,7 +574,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 5",
-        price: 27.50,
+        price: 25.00,
         platos: [
             "1 Balde de Cerveza",
             "1 Parrilla para dos personas"
@@ -585,7 +585,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 6",
-        price: 26.00,
+        price: 22.00,
         platos: [
             "1 Balde de Cerveza",
             "Pollo asado con bollitos"
@@ -609,7 +609,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 8",
-        price: 15.00,
+        price: 12.00,
         platos: [
             "10 Perros calientes sencillos",
             "1 Refresco de 2 Litros"
@@ -620,7 +620,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 9",
-        price: 45.00,
+        price: 40.00,
         platos: [
             "Parrilla para 4 personas",
             "1 Balde de Cerveza"
@@ -631,7 +631,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 10",
-        price: 15.00,
+        price: 10.00,
         platos: [
             "2 Hamburguesas de carne",
             "1 Ración de papas fritas",
@@ -643,7 +643,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 11",
-        price: 16.00,
+        price: 15.00,
         platos: [
             "1 Balde de Cerveza",
             "1 Ración de Alas BBQ"
@@ -654,7 +654,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 12",
-        price: 15.00,
+        price: 13.00,
         platos: [
             "1 Balde de Cerveza",
             "1 Ración de Tequeños"
@@ -665,7 +665,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 13",
-        price: 30.00,
+        price: 20.00,
         platos: [
             "4 Hamburguesas de carne",
             "6 Perros calientes sencillos",
@@ -677,7 +677,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 14",
-        price: 18.00,
+        price: 12.00,
         platos: [
             "2 Hamburguesas de pollo",
             "1 Ración de papas fritas",
@@ -712,7 +712,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 17",
-        price: 24.00,
+        price: 20.00,
         platos: [
             "6 Perros sencillos",
             "2 Hamburguesas de carne",
@@ -725,7 +725,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 18",
-        price: 45.00,
+        price: 35.00,
         platos: [
             "4 Hamburguesas",
             "1 Pollo a la Broaster",
@@ -738,7 +738,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 19",
-        price: 20.00,
+        price: 18.00,
         platos: [
             "10 Perros sencillos",
             "1 Pizza",
@@ -750,7 +750,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 20",
-        price: 42.00,
+        price: 38.00,
         platos: [
             "1 Parrilla para 4 personas",
             "1 Pizza",
@@ -762,7 +762,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 21",
-        price: 36.00,
+        price: 25.00,
         platos: [
             "2 Pizzas",
             "4 Hamburguesas de pollo",
@@ -774,7 +774,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 22",
-        price: 50.00,
+        price: 35.00,
         platos: [
             "4 Hamburguesas de carne",
             "4 Hamburguesas de pollo",
@@ -787,7 +787,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 23",
-        price: 8.00,
+        price: 7.50,
         platos: [
             "5 Perros sencillos",
             "1 Refresco 2 Litros"
@@ -798,7 +798,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 24",
-        price: 20.00,
+        price: '20.00 Fisico',
         platos: [
             "2 Baldes de Cerveza"
         ],
@@ -808,7 +808,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 25",
-        price: 28.00,
+        price: 30.00,
         platos: [
             "2 Sangrías"
         ],
@@ -830,7 +830,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 27",
-        price: 55.00,
+        price: 50.00,
         platos: [
             "2 Sangrías",
             "1 Parrilla para 3 personas"
@@ -863,7 +863,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 30",
-        price: 30.00,
+        price: 25.00,
         platos: [
             "1 Sangría",
             "1 Pollo asado con bollitos"
@@ -874,7 +874,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 31",
-        price: 16.50,
+        price: 15.00,
         platos: [
             "5 Hamburguesas sencillas",
             "1 Refresco de 1 Litro"
@@ -885,7 +885,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 32",
-        price: 16.50,
+        price: 15.00,
         platos: [
             "2 Hamburguesas de carne especial",
             "Ración de nuggets",
@@ -897,7 +897,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 33",
-        price: 17.00,
+        price: 10.00,
         platos: [
             "2 Hamburguesas de pollo crispy",
             "Ración de papas",
@@ -909,7 +909,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 34",
-        price: 16.50,
+        price: 15.00,
         platos: [
             "3 Pizzas Margarita medianas",
             "1 Refresco de 1 Litro"
@@ -920,7 +920,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 35",
-        price: 16.50,
+        price: 15.00,
         platos: [
             "1 Pizza Margarita grande",
             "1 Pizza mediana",
@@ -932,7 +932,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 36",
-        price: 15.00,
+        price: 10.00,
         platos: [
             "1 Shawarma mixto",
             "1 Ración de papas",
@@ -966,7 +966,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 39",
-        price: 19.50,
+        price: 20.00,
         platos: [
             "5 Perros sencillos",
             "4 Hamburguesas",
@@ -978,7 +978,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 40",
-        price: 15.50,
+        price: 25.00,
         platos: [
             "1 Salchipapa",
             "5 Perros sencillos",
@@ -991,7 +991,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 41",
-        price: 18.00,
+        price: 15.00,
         platos: [
             "1 Papa loca",
             "1 Ración de nuggets",
@@ -1003,7 +1003,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 42",
-        price: 10.00,
+        price: 7.00,
         platos: [
             "Alas BBQ",
             "Ración de papas"
@@ -1014,7 +1014,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 43",
-        price: 10.00,
+        price: 8.00,
         platos: [
             "5 Chorizos",
             "Ensalada",
@@ -1027,7 +1027,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 44",
-        price: 16.00,
+        price: 15.00,
         platos: [
             "1 Pizza mediana Margarita",
             "Ración de papas",
@@ -1040,7 +1040,7 @@ const COMBOS = [
     },
     {
         name: "COMBO 45",
-        price: 25.00,
+        price: 10.00,
         platos: [
             "Costillas BBQ",
             "Ración de papas",
